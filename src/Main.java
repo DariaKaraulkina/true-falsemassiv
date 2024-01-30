@@ -12,6 +12,7 @@ public class Main {
         System.out.println(massivnew(AAA));
     }
 
+    // Названия методов нужны более говорящие, пока что по названиям непонятно, что делает метод
     public static int[] massiv() {
         int[] myArray = new int[100];
         for (int i = 0; i < myArray.length; i++) {
@@ -24,6 +25,7 @@ public class Main {
         int[] trueArray = massiv();
         int sum1 = 0;
         int sum2 = 0;
+        // Давай в этом методе заменим циклы for на forEach (это который enhanced for)
         for (int i = 0; i < trueArray.length; i++) {
           sum1 =sum1 + trueArray[i]  ;
             System.out.println("сумма правильного массива =" + sum1);
