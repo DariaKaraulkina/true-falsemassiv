@@ -26,12 +26,12 @@ public class Main {
         int sum1 = 0;
         int sum2 = 0;
         // Давай в этом методе заменим циклы for на forEach (это который enhanced for)
-        for (int i = 0; i < trueArray.length; i++) {
-          sum1 =sum1 + trueArray[i]  ;
+        for (int i: trueArray) {
+          sum1 =sum1 + i  ;
             System.out.println("сумма правильного массива =" + sum1);
         }
-        for (int i = 0; i < falseArray.length; i++) {
-            sum2 = sum2 + falseArray[i]  ;
+        for (int i :falseArray) {
+            sum2 = sum2 + i  ;
             System.out.println("сумма неправильного массива =" + sum2);
         }
         return sum2 - sum1;
